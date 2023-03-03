@@ -1,0 +1,14 @@
+name: My first GH Actions workflow
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: My hello world
+        run: echo "Hello World"
+      - name: multiple commands
+        run: |
+          git -v
+          whoami
+          echo "bye"
