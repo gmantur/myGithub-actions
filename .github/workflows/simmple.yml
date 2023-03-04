@@ -12,3 +12,9 @@ jobs:
           git -v
           whoami
           echo "bye"
+      - name: which area are we running
+        run: |
+          ls
+          pwd
+      - name: Checkout command checking
+        uses: actions/checkout@v1
